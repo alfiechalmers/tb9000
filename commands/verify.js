@@ -2,7 +2,7 @@ const { RoleManager, Guild } = require("discord.js")
 
 module.exports = {
     name: "verify",
-    cooldown: "0",
+    cooldown: "600",
     execute(message, args) {
         if(message.member.roles.cache.has("769269038743289867")) {
             message.channel.send('You are already Verified!')

@@ -66,9 +66,9 @@ for (let i = 0; i < arrayOfUsersIds.length; i++) {
 	if (timestamps.has(message.author.id)) {
 		const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
 
-		client.users.fetch('670326523504361472').then((user) => {
-			user.send(`@${message.author.tag} (${message.author}) is spamming commands`);
-		});
+		//client.users.fetch('670326523504361472').then((user) => {
+		//	user.send(`@${message.author.tag} (${message.author}) is spamming commands`);
+		//});
 	
 		if (now < expirationTime) {
 			const timeLeft = (expirationTime - now) / 1000;
