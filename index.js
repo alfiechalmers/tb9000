@@ -16,7 +16,7 @@ const cooldowns = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setActivity("!help", {
+	client.user.setActivity("!verify", {
 		type: "PLAYING",
 	  });
 	  client.users.fetch('670326523504361472').then((user) => {
