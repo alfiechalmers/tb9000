@@ -4,7 +4,7 @@ module.exports = {
     name: "verify",
     cooldown: "600",
     execute(message, args) {
-        if(message.member.roles.cache.has("769269038743289867")) {
+        if(message.member.roles.cache.has("759762777299484692")) {
             message.channel.send('You are already Verified!')
           } else {
         let verifiable = message.author.id;
@@ -28,12 +28,12 @@ module.exports = {
     
                     if (reaction.emoji.name === monkeys[randomMonkey]) {
                         let member = correctGuild.members.cache.get(verifiable);
-                        let role = correctGuild.roles.cache.get("769269038743289867");
+                        let role = correctGuild.roles.cache.get("759762777299484692");
                         member.roles.add(role)
                         verified.send(`Successfully verified as ${verified}`);
                     } else {
                         let member = correctGuild.members.cache.get(message.author.id);
-                        let role = correctGuild.roles.cache.get("769269038743289867");
+                        let role = correctGuild.roles.cache.get("759762777299484692");
                         member.roles.remove(role)
                         verified.send('It\'s not hard, try again in 10 minutes.');
                     }
